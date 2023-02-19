@@ -39,5 +39,5 @@ class UserSerializer(serializers.ModelSerializer):
             'photo',
             'birth_day',
             'degree',
-            'silent_talker'            
+            'silent_talker'
         )
