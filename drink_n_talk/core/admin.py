@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from drink_n_talk.core.models import Bar, Drink, Language, Theme
+from .models import Bar, Drink, Language, Theme
 
 
 class DrinkAdmin(admin.ModelAdmin):
@@ -14,4 +14,6 @@ class LanguageAdmin(admin.ModelAdmin):
     search_fields = ('name')
 
 
+admin.site.register(Drink, DrinkAdmin)
+admin.site.register(Language, LanguageAdmin)
 admin.site.register(Bar, Theme)
