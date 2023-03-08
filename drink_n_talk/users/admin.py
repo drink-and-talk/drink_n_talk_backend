@@ -24,4 +24,5 @@ class UserCustomAdmin(UserAdmin):
         UserThemeInline
     )
 
+
 admin.site.register(User, UserCustomAdmin)
